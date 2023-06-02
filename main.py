@@ -7,6 +7,18 @@ import torch
 
 app = FastAPI()
 
+origins = [
+   "*"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
