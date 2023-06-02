@@ -24,8 +24,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(device)
 
 
-tokenizer = AutoTokenizer.from_pretrained("Devden/Generalized-Persona",  use_auth_token=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)
-model = AutoModelForCausalLM.from_pretrained("Devden/Generalized-Persona",  use_auth_token=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)
+tokenizer = AutoTokenizer.from_pretrained("Devden/Generalized-Persona",  use_auth_token="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")
+model = AutoModelForCausalLM.from_pretrained("Devden/Generalized-Persona",  use_auth_token="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")
     
 
 
