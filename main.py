@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from transformers import AutoTokenizer, AutoModelForCausalLM
-
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import torch
 
